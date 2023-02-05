@@ -20,9 +20,11 @@ header {
 }
 header > h1 {
     display: block;
+    float: left;
 }
 header > menu a{
     display: block;
+    float: right;
     color: white;
     text-decoration: none;
 }
