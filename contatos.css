@@ -14,20 +14,27 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-hr {
-    width: 50%;
-    margin: auto;
-    box-shadow: 0px 0px 2px #4442434b;
+main {
+    justify-content: space-between;
 }
 .grupo {
     border: 0;
     margin: auto;
 }
+section {
+    display: block;
+    text-align: center;
+}
+section li {
+    display: inline-block;
+}
 article {
+    display: block;
     width: 50%;
     margin: 20px;
     font-size: 1.5em;
 }
+
 input, textarea {
     border-radius: 5px;
     font-size: 1em;
@@ -40,4 +47,24 @@ input:focus, textarea:focus{
     font-size: 1em;
     background-color: var(--cor5);
     padding: 2px;
+}
+.botao:hover {
+    background-color: var(--cor2);
+    color: white;
+    transform: translate(-1px, -1px);
+    transition: .3s;
+}
+section#redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+section#redes img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    transform: translate(-2px, -2px);
+    transition: transform .2s;
+}
+main {
+    height: 700px;
 }
