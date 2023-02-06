@@ -34,7 +34,6 @@ article {
     margin: 20px;
     font-size: 1.5em;
 }
-
 input, textarea {
     border-radius: 5px;
     font-size: 1em;
@@ -67,4 +66,17 @@ section#redes img:hover {
 }
 main {
     height: 700px;
+}
+@media screen and (max-width: 560px) {
+    input.grupo, textarea {
+        width: 250px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    main {
+        height: 100%;
+    }
+    .botao {
+        margin: 0px 0px 20px 0px;
+    }
 }
