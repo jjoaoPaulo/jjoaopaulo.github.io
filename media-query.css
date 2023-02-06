@@ -11,12 +11,14 @@
 @media screen and (min-width: 768px){
     body{
         transition: 1s;
+        height: 100vh;
     }
     header{
-        background: var(--cor5) url(imagens/back_phone.jpg) top left;
+        background: var(--cor5) url(imagens/back_phone.jpg) top center;
         background-size: cover;
         background-attachment: fixed;
         margin: auto;
+        height: 30vh;
         transition: 1s;
         justify-content: space-between;
     }
@@ -62,5 +64,6 @@
     main {
         background-color: white;
         width: 70%;
+        height: 1200px;
     }
 }
