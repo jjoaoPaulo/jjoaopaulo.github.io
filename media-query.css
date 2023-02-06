@@ -10,28 +10,45 @@
 
 @media screen and (min-width: 769px){
     body{
-        background: var(--cor5) url(imagens/back_phone.jpg) top left;
-        background-size: cover;
         transition: 1s;
     }
     header{
-        width: 600px;
+        background: var(--cor5) url(imagens/back_phone.jpg) top left;
+        background-size: cover;
+        background-attachment: fixed;
         margin: auto;
         transition: 1s;
+        justify-content: space-between;
+    }
+    #header {
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     span#burguer {
         display: none;
+    }
+    #titulo {
+        display: flex;
+    } 
+    #opcoes {
+        display: flex;
+        align-items: center;
     }
     menu {
         background-color: transparent;
         display: block;
         text-align: right;
         transform: translateY(-69px);
-        padding: 0px 10px;
         margin: 0px;
     }
     menu li {
         display: inline-block; 
         padding: 0px 10px; 
+    }
+    main {
+        background-color: white;
     }
 }
