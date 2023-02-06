@@ -66,14 +66,17 @@ section#redes img:hover {
 main {
     height: 700px;
 }
-@media screen and (max-width: 560px) {
-    input.grupo, textarea {
-        width: 250px;
+@media screen and (max-width: 1080px) {
+    input#nome, input#email, textarea {
+        width: 100%;
         border-radius: 5px;
         font-size: 1em;
     }
     main {
         height: 100%;
+    }
+    article{
+        width: 90%;
     }
     .botao {
         margin: 0px 0px 20px 0px;
