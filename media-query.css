@@ -7,3 +7,28 @@
     --cor4: #444243;
     --cor5: #F2DFDF;
 }
+
+@media screen and (min-width: 769px){
+    header {
+        height: 100px;
+    }
+    header > h1{
+        display: block;
+        text-align: left;
+        transform: translateY(25px);
+        padding: 0px 10px;
+    }
+    span#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+        text-align: right;
+        transform: translateY(-16px);
+        padding: 0px 10px;
+    }
+    menu li {
+        display: inline-block; 
+        padding: 0px 10px; 
+    }
+}
