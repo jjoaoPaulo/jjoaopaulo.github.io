@@ -40,8 +40,13 @@ header {
     color: white;
     display: flex;
 }
-#titulo:hover {
+#titulo a {
+    color: white;
+    text-decoration: none;
+}
+#titulo a:hover {
     color: var(--cor5);
+    
 }
 #opcoes {
     color: white;
@@ -79,6 +84,9 @@ menu a:hover {
     color: var(--cor5);
     transform: translate(-2px, -2px);
     transition: .3s;
+}
+main {
+    height: 100vh;
 }
 main > h1 {
     display: block;
