@@ -63,9 +63,6 @@ section#redes img:hover {
     transform: translate(-2px, -2px);
     transition: transform .2s;
 }
-main {
-    height: 700px;
-}
 @media screen and (max-width: 1080px) {
     input#nome, input#email, textarea {
         width: 100%;
