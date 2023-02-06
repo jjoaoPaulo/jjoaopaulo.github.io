@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="contatos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body onresize="mudouTamanho()">
@@ -29,20 +30,20 @@
     </header>
     <main>
         <h1>Entre em contato</h1>
+        <hr>
+        
         <article>
             <form action="https://api.staticforms.xyz/submit" method="post">
-                <input type="hidden" name="accessKey" value="505986fd-5f8a-43a7-b505-f6e314a6a35c">
-                <input type="hidden" name="redirectTo" value="https://jjoaopaulo.github.io">
-                <fieldset>
+                    <input type="hidden" name="accessKey" value="505986fd-5f8a-43a7-b505-f6e314a6a35c">
+                    <input type="hidden" name="redirectTo" value="https://jjoaopaulo.github.io">
                     <label for="nome">Seu Nome: </label> <br>
-                    <input type="text" name="name" id="nome" required><br>
+                        <input type="text" name="name" id="nome" required><br>
                     <label for="email">Seu e-mail: </label> <br>
-                    <input type="email" name="email" id="email" required><br>
+                        <input type="email" name="email" id="email" required><br>
                     <label for="mensagem">Sua Mensagem: </label> <br>
-                    <textarea name="message" id="mensagem" cols="30" rows="10" required></textarea><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </fieldset>
+                        <textarea name="message" id="mensagem" cols="30" rows="10" required></textarea><br>
+                <input class="botao" type="submit" value="Enviar">
+                <input class="botao" type="reset" value="Limpar">
             </form>
         </article>
     </main>

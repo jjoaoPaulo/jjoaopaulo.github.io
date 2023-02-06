@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #261A1A;
+    --cor2: #642E44;
+    --cor3: #A65D7C;
+    --cor4: #444243;
+    --cor5: #F2DFDF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 2px #4442434b;
+}
+.grupo {
+    border: 0;
+    margin: auto;
+}
+article {
+    width: 50%;
+    margin: 20px;
+    font-size: 1.5em;
+}
+input, textarea {
+    border-radius: 5px;
+    font-size: 1em;
+}
+input:focus, textarea:focus{
+    background-color: var(--cor5);
+}
+.botao {
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: var(--cor5);
+    padding: 2px;
+}
