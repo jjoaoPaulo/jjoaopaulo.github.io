@@ -6,6 +6,7 @@
     --cor3: #A65D7C;
     --cor4: #444243;
     --cor5: #F2DFDF;
+    --cor6: #642e449a;
 }
 
 * {
@@ -25,11 +26,13 @@ header {
     padding: 10px;
 }
 #header {
-    background-color: var(--cor2);
+    background-color: var(--cor6);
     padding: 10px;
     display: flex;
     align-items: center;
+    transform: translate(10%);
     justify-content: space-between;
+    width: 80vw;
 }
 #titulo {
     height: 100%;
@@ -55,7 +58,7 @@ menu {
     display: none;
     background-color: var(--cor1);
     border-radius: 10px;
-    width: 500px;
+    width: 80vw;
     height: 500px;
     margin: auto;
     margin-top: 20px;
@@ -74,6 +77,8 @@ menu  a {
 }
 menu a:hover {
     color: var(--cor5);
+    transform: translate(-2px, -2px);
+    transition: .3s;
 }
 main > h1 {
     display: block;
