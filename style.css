@@ -108,13 +108,6 @@ main a{
     text-decoration: none;
     line-height: 2em;
 }
-main a:hover{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: var(--cor2);
-    color: white;
-    text-decoration: none;
-}
 main li {
     list-style: none;
 }
@@ -130,6 +123,13 @@ main > article {
 main > article p {
     font-size: 1.5em;
     text-indent: 20px;
+}
+ul#links a:hover {
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor2);
 }
 footer {
     background-color: var(--cor4);

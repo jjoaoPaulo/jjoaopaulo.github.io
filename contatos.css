@@ -48,10 +48,9 @@ input:focus, textarea:focus{
     padding: 2px;
 }
 .botao:hover {
-    background-color: var(--cor2);
     color: white;
     transform: translate(-1px, -1px);
-    transition: .3s;
+    transition: .5s;
 }
 section#redes img {
     width: 50px;
