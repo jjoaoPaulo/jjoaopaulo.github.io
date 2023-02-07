@@ -16,6 +16,7 @@
 }
 main {
     justify-content: space-between;
+    height: 700px;
 }
 .grupo {
     border: 0;
@@ -68,9 +69,6 @@ section#redes img:hover {
         width: 100%;
         border-radius: 5px;
         font-size: 1em;
-    }
-    main {
-        height: 100%;
     }
     article{
         width: 90%;
