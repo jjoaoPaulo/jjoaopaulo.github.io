@@ -1,147 +1,185 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #261A1A;
-    --cor2: #642E44;
-    --cor3: #A65D7C;
-    --cor4: #444243;
-    --cor5: #F2DFDF;
-    --cor6: #642e449a;
+    --cor1: #A057C2;
+    --cor2: #68158F;
+    --cor2-1: #68158f67;
+    --cor3: #9586F5;
+    --cor4: #F6EBC5;
+    --cor5: #C29E57;
+    --cor6: rgb(36, 35, 35);
 }
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
+*{
     margin: 0px;
-    box-sizing: border-box;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background: var(--cor5) url(imagens/back_phone.jpg) top left;
+div#bg-foto{
+    background: url(imagens/pexels-cecile-hournau-15122403.jpg) top center fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 header {
-    background-color: transparent;
-    justify-content: space-between;
-    margin: 0px;
-    width: 100%;
-    height: 90vh;
-    padding: 10px;
+    background-color: var(--cor2-1);
+    height: 70px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
-#header {
-    background-color: var(--cor6);
-    padding: 10px;
+ul#container1 {
     display: flex;
-    align-items: center;
-    transform: translate(10%);
-    justify-content: space-between;
-    width: 80vw;
+    justify-content: center;
 }
-#titulo {
-    height: 100%;
-    max-width: 200px;
-    color: white;
-    display: flex;
+ul#container1 li{
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 10px;
 }
-#titulo a {
-    color: white;
-    text-decoration: none;
-}
-#titulo a:hover {
-    color: var(--cor5);
-    
-}
-#opcoes {
-    color: white;
-    display: flex;
-    align-items: center;
-}
-#opcoes > span {
-    font-size: 40px;
-}
-#opcoes > span:hover {
-    color: var(--cor5);
-}
-menu {
-    display: none;
-    background-color: var(--cor1);
-    border-radius: 10px;
-    width: 80vw;
-    height: 500px;
-    margin: auto;
-    margin-top: 20px;
-}
-menu > ul {
-    list-style-type: none;
-}
-menu  a {
+ul#container1 a {
     display: block;
+    font-size: 1.5em;
     text-decoration: none;
-    text-align: center;
-    font-size: 20px;
     color: white;
-    padding: 70px 0px;
-    transition-duration: 0.1s;
+    padding: 10px;
+    border-radius: 5px;
 }
-menu a:hover {
-    color: var(--cor5);
+ul#container1 a:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.479);
     transform: translate(-2px, -2px);
     transition: .3s;
 }
-hr {
-    width: 50%;
-    margin: auto;
-    box-shadow: 0px 0px 2px #4442434b;
-    margin-bottom: 1em;
+article#container2{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
 }
-main {
-    border-radius: 5px;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.308);
-}
-main a{
-    font-size: 1.2em;
-    color: var(--cor1);
-    text-decoration: none;
-    line-height: 2em;
-}
-main li {
-    list-style: none;
-}
-main > h1 {
-    margin-top: 20px;
-    display: block;
+article#container2 > h1 {
     text-align: center;
-    padding: 20px;
+    color: white;
+    font-size: 3em;
 }
-main > article {
-    padding: 0px 20px;
+article > h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
 }
-main > article p {
+article#projetos > ul#container3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+ul#container3 li {
+    list-style: none;
+    text-align: center;
+    background-color: var(--cor4);
+    width: 200px;
+    height: 300px;
+}
+ul#container3 a {
+    display: block;
     font-size: 1.5em;
-    text-indent: 20px;
-}
-ul#links a:hover {
+    text-decoration: none;
+    padding: 10px;
     border-radius: 5px;
+}
+article#projetos a#veja-mais {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.5em;
     padding: 5px;
+    background-color: var(--cor6);
     color: white;
     text-decoration: none;
-    background-color: var(--cor2);
+    width: 90%;
+}
+a#veja-mais:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.479);
+    transform: translate(-2px, -2px);
+    transition: .3s;
+}
+ul#container4 {
+    display: flex;
+    justify-content: center;
+}
+ul#container4 li {
+    list-style: none;
+}
+section#redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+section#redes img:hover {
+    border: 2px solid var(--cor4);
+    transform: translate(-2px, -2px);
+    transition: transform .2s;
+}
+article#container5 {
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 50vw;
+}
+form label {
+    font-size: 1.5em;
+}
+form input#nome, input#email, textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+form input#nome, input#email{
+    height: 30px;
+}
+form input#nome:focus, input#email:focus, textarea:focus{
+    font-size: 1.5em;
+    background-color: var(--cor4);
+}
+form div#container6 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+form input.botao {
+    margin-top: 10px;
+    font-size: 1.3em;
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    margin-bottom: 10px;
+}
+form input.botao:hover {
+    background-color: var(--cor5);
+    color: white;
+    border: 2px solid var(--cor4);
+    transform: translate(-2px, -2px);
+    transition: transform .2s;
 }
 footer {
-    background-color: var(--cor4);
-    color: var(--cor5);
-    margin: auto;
-    margin-top: 10px;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    width: 90vw;
+    background-color: var(--cor6);
 }
-footer a {
-    color: var(--cor5);
-    text-decoration: none;
+footer p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+@media screen and (min-width: 890px) {
+    ul#container1 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    form {
+        width: 445px;
+        transition: .3s;
+    }
 }
