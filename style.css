@@ -15,16 +15,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 @media screen {
+    html{
+        scroll-behavior: smooth;
+    }
     div#bg-foto{
-        background: url(imagens/pexels-cecile-hournau-15122403.jpg) top center fixed;
+        background: url(imagens/WhatsApp\ Image\ 2023-02-08\ at\ 10.34.01.jpeg) top center fixed;
         background-size: cover;
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
     header {
         background-color: var(--cor2-1);
         height: 70px;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        position: fixed;
     }
     ul#container1 {
         display: flex;
@@ -59,7 +66,7 @@
     article#container2 > h1 {
         text-align: center;
         color: white;
-        font-size: 3em;
+        font-size: 3.5em;
     }
     article > h2 {
         font-size: 2em;
@@ -67,26 +74,7 @@
         margin-bottom: 20px;
         padding-top: 10px;
     }
-    article#projetos > ul#container3 {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    ul#container3 li {
-        list-style: none;
-        text-align: center;
-        background-color: var(--cor4);
-        width: 200px;
-        height: 300px;
-    }
-    ul#container3 a {
-        display: block;
-        font-size: 1.5em;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 5px;
-    }
+    
     article#projetos {
         height: 100vh;
     }
@@ -116,9 +104,6 @@
     }
     ul#container4 li {
         list-style: none;
-    }
-    article#contatos{
-        height: 100vh;
     }
     section#redes img {
         width: 50px;
